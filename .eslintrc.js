@@ -32,6 +32,11 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "react/no-unknown-property": ['error', { ignore: ['css', "args", 'wireframe', 'rotation-x', 'rotation'] }],
+        "@typescript-eslint/no-namespace": "off",
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/no-unknown-property": ['error', { ignore: [
+            'args', 'intensity', 'castShadow', 'shadow-bias', 'shadow-radius', 'shadow-blur', 'shadow-mapSize', 'position', 'rotation',
+            'shadow-camera-left', 'shadow-camera-right', 'shadow-camera-top', 'shadow-camera-bottom', 'dispose', 'receiveShadow', 'geometry', 'material'] }],
     }
 }
